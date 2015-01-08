@@ -256,7 +256,7 @@
 			<object type="button">
 				<highlight color="%highlight_color%" />
 				<condition var1="tw_multirom_is_android" var2="1" />
-				<placement x="%mrom_wipe_col2_x%" y="%row3_text_y%" />
+				<placement x="%col2_medium_x%" y="%row3_text_y%" />
 				<font resource="font" color="%button_text_color%" />
 				<text>Wipe dalvik</text>
 				<image resource="medium_button" />
@@ -277,9 +277,9 @@
 			<object type="button">
 				<highlight color="%highlight_color%" />
 				<condition var1="tw_multirom_is_android" var2="1" />
-				<placement x="%mrom_wipe_col3_x%" y="%row3_text_y%" />
+				<placement x="%col3_medium_x%" y="%row3_text_y%" />
 				<font resource="font" color="%button_text_color%" />
-				<text>Wipe /cache</text>
+				<text>Wipe cache</text>
 				<image resource="medium_button" />
 				<actions>
 					<action function="set">tw_multirom_wipe=cache</action>
@@ -329,7 +329,7 @@
 			<object type="button">
 				<highlight color="%highlight_color%" />
 				<condition var1="tw_multirom_is_android" var2="1" />
-				<placement x="%col1_medium_x%" y="%row5_medium_y%" />
+				<placement x="%col1_medium_x%" y="%row6_medium_y%" />
 				<font resource="font" color="%button_text_color%" />
 				<text>Flash ZIP</text>
 				<image resource="medium_button" />
@@ -342,7 +342,7 @@
 			<object type="button">
 				<highlight color="%highlight_color%" />
 				<condition var1="tw_multirom_is_android" var2="1" />
-				<placement x="%col2_medium_x%" y="%row5_medium_y%" />
+				<placement x="%col2_medium_x%" y="%row6_medium_y%" />
 				<font resource="font" color="%button_text_color%" />
 				<text>Sideload</text>
 				<image resource="medium_button" />
@@ -1039,7 +1039,7 @@
 					<condition var1="tw_multirom_auto_boot_trigger" var2="1" />
 					<condition var1="tw_multirom_delay" op=">" var2="1" />
 				</conditions>
-				<placement x="%col2_medium_x%" y="%row2_medium_y%" />
+				<placement x="%col2_x%" y="%row2_medium_y%" />
 				<font resource="font" color="%button_text_color%" />
 				<text>-</text>
 				<image resource="medium_button" />
@@ -1051,7 +1051,7 @@
 
 			<object type="text" color="%text_color%">
 				<condition var1="tw_multirom_auto_boot_trigger" var2="1" />
-				<placement x="%mrom_boot_delay_sec_x%" y="%row3_text_y%" />
+				<placement x="250" y="%row3_text_y%" />
 				<font resource="font"/>
 				<text>%tw_multirom_delay%s</text>
 			</object>
@@ -1059,7 +1059,7 @@
 			<object type="button">
 				<highlight color="%highlight_color%" />
 				<condition var1="tw_multirom_auto_boot_trigger" var2="1" />
-				<placement x="%mrom_boot_delay_add_x%" y="%row2_medium_y%" />
+				<placement x="%col2_medium_x%" y="%row2_medium_y%" />
 				<font resource="font" color="%button_text_color%" />
 				<text>+</text>
 				<image resource="medium_button" />
